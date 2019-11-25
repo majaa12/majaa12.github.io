@@ -1,0 +1,378 @@
+body{
+	background: url(../img/proba.jpg) no-repeat top center;
+	color: white;
+}
+#destinacije .parent{
+	font-style: bold;
+}
+
+
+footer{
+	background: #333;
+	color: #fff;
+	padding: 30px 0 20px 0;
+   position:fixed;
+   left:0px;
+   bottom:0px;
+   height: 7%;
+   width:100%;
+   
+
+}
+
+footer li{
+	float: left;
+	padding: 0 10px 0 10px;
+	list-style: none;
+}
+
+footer a{
+	color: #fff;
+}
+
+
+@media(min-width: 1200px){
+	
+	#imeForma{
+		width: 100%;
+	}	
+
+	#emailForma{
+		width: 100%;
+	}
+
+	#napomena{
+		width: 100%;
+	}
+
+	footer {
+		margin-top: 10px;
+		padding-bottom: 20px;
+		height: 20px;
+		font-size: 10px;
+	}
+	footer #podaci{
+		margin-top: -10px;
+	}
+	footer #copy{
+		margin-top: -10px;
+	}
+
+
+		footer ul{
+		padding : 0px;
+		margin-bottom: 10px;
+	}
+}
+
+
+@media(min-width: 991px) and (max-width: 1200px) {
+		
+	
+
+	#napomena{
+		width: 100%;
+	}
+	
+
+
+	footer {
+		margin-top: 10px;
+		padding-bottom: 20px;
+		height: 20px;
+		font-size: 10px;
+	}
+	footer #podaci{
+		margin-top: -10px;
+	}
+	footer #copy{
+		margin-top: -10px;
+	}
+
+
+		footer ul{
+		padding : 0px;
+		margin-bottom: 10px;
+	}
+}
+
+
+@media(min-width: 770px) and (max-width: 990px) {
+	
+	
+	#napomena{
+		width: 100%;
+	}
+
+	#ponisti{
+		margin-top: -90px;
+	}
+
+	#rezervisi{
+		margin-top: -90px;
+	}
+
+	footer {
+		margin-top: 10px;
+		padding-bottom: 20px;
+		height: 20px;
+		font-size: 10px;
+	}
+
+	footer #podaci{
+		padding: 0;
+		margin-left: 92px;
+		margin-right: 170px;
+		margin-top: -30px;
+	}
+	footer #copy{
+		margin-top: -1px;
+	}
+	footer ul{
+		padding : 0px;
+		margin-bottom: 10px;
+	}
+}
+
+
+@media(min-width: 545px) and (max-width: 769px) {
+	
+
+	
+
+	#napomena{
+		width: 100%;
+	}
+
+	#ponisti{
+		margin-top: -90px;
+	}
+
+	#rezervisi{
+		margin-top: -90px;
+	}
+
+	footer {
+		margin-top: 10px;
+		padding-bottom: 20px;
+		height: 20px;
+		font-size: 10px;
+	}
+
+	footer #podaci{
+		padding: 0;
+		margin-left: 92px;
+		margin-right: 170px;
+		margin-top: -30px;
+	}
+	footer #copy{
+		margin-top: -1px;
+	}
+	footer ul{
+		padding : 0px;
+		margin-bottom: 10px;
+	}
+	
+}
+
+@media(min-width: 525px) and (max-width: 544px) {
+	
+
+
+	
+
+	#napomena{
+		width: 100%;
+	}
+
+	#ponisti{
+		margin-top: -90px;
+	}
+
+	#rezervisi{
+		margin-top: -90px;
+	}
+
+
+	footer {
+		margin-top: 10px;
+		padding-bottom: 20px;
+		height: 20px;
+		font-size: 10px;
+	}
+
+	footer #podaci{
+		padding: 0;
+		margin-left: 92px;
+		margin-right: 170px;
+		margin-top: -30px;
+	}
+	footer #copy{
+		display: none;
+	}
+	footer ul{
+		padding : 0px;
+		margin-bottom: 10px;
+	}
+	
+}
+
+@media(min-width: 470px) and (max-width: 524px) {
+	
+
+
+	#napomena{
+		width: 100%;
+	}
+
+	#ponisti{
+		margin-top: -90px;
+	}
+
+	#rezervisi{
+		margin-top: -90px;
+	}
+
+	footer {
+		margin-top: 10px;
+		padding-bottom: 20px;
+		height: 20px;
+		font-size: 10px;
+	}
+
+	footer #podaci{
+		padding: 0;
+		margin-left: 92px;
+		margin-right: 150px;
+		margin-top: -30px;
+	}
+	footer #copy{
+		display: none;
+	}
+	footer ul{
+		padding : 0px;
+		margin-bottom: 10px;
+	}
+	
+}
+
+
+@media(min-width: 400px) and (max-width: 470px) {
+
+	#napomena{
+		width: 100%;
+	}
+
+	#ponisti{
+		margin-top: -90px;
+	}
+
+	#rezervisi{
+		margin-top: -90px;
+	}
+
+
+	footer {
+		margin-top: 10px;
+		padding-bottom: 20px;
+		height: 20px;
+		font-size: 10px;
+	}
+
+	footer #podaci{
+		padding: 0;
+		margin-left: 92px;
+		margin-right: 70px;
+		margin-top: -30px;
+	}
+	footer #copy{
+		display: none;
+	}
+	footer ul{
+		padding : 0px;
+		margin-bottom: 10px;
+	}
+	
+}
+
+@media(max-width: 400px) {
+
+
+	#napomena{
+		width: 100%;
+	}
+	
+
+	#ponisti{
+		margin-top: -90px;
+	}
+
+	#rezervisi{
+		margin-top: -90px;
+	}
+
+
+	footer {
+		margin-top: 10px;
+		padding-bottom: 20px;
+		height: 20px;
+		font-size: 10px;
+	}
+
+	footer #podaci{
+		padding: 0;
+		margin-left: 75px;
+		margin-right: 50px;
+		margin-top: -30px;
+	}
+	footer #copy{
+		display: none;
+	}
+	footer ul{
+		padding : 0px;
+		margin-bottom: 10px;
+	}
+	
+}
+
+@media(max-width: 185px) {
+
+
+	#napomena{
+		width: 100%;
+	}
+	
+
+	#ponisti{
+		margin-top: -100px;
+		
+	}
+
+	#rezervisi{
+		margin-top: -70px;
+
+	}
+
+
+	footer {
+		margin-top: 10px;
+		padding-bottom: 20px;
+		height: 20px;
+		font-size: 10px;
+	}
+
+	footer #podaci{
+		padding: 0;
+		margin-left: 75px;
+		margin-right: 50px;
+		margin-top: -30px;
+	}
+	footer #copy{
+		display: none;
+	}
+	footer ul{
+		padding : 0px;
+		margin-bottom: 10px;
+	}
+	
+}

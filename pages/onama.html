@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta http-equiv="Content-Language" content="sr" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link rel="stylesheet" href="../css/o-nama-style.css">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<!--VALIDACIJA-->
+	<script type="text/javascript" src="../javascript/o-nama-validacija.js"></script>
+
+	<title>O nama</title>
+	<link rel="shortcut icon" href="../img/about.png">
+
+
+</head>
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toogle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+
+				
+				<a class="navbar-brand" href="../home.html">Travel Agency</a>
+			</div>
+			<div id="navbar" class="collapse navbar-collapse">
+				<ul class="nav navbar-nav">
+					<li ><a href="../home.html"><span class="glyphicon glyphicon-home"> </span> Početna</a></li>
+					<li class="active"><a href="#">O nama</a></li>
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-plane" ></span> Putovanja <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="evropa.html">Evropa</a></li>
+							<li><a href="interkontinentalna.html">Interkontinentalna</a></li>
+						</ul>	
+					</li>
+					<li><a href="rezervacije.html"><span class="glyphicon glyphicon-book"></span> Rezervacije</a></li>
+					<li><a href="Galerija.html">Galerija</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+
+	<br>
+	<br>
+	<br>
+	<br>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<div id="dream-land">Turistička agencija Dream Land bavi se prodajom turističkih aranžmana u zemlji i inostranstvu od 2012. godine. Uz odličnu saradnju koju imamo sa renomiranim imenima iz sveta turizma gradimo reputaciju efikasne i pouzdane agencije i tour operator-a, sa željom da našim korisnicima pružimo najbolju uslugu. Svoju poslovnu filozofiju baziramo na kreiranju ponuda prema potrebama i zahtevima putnika. Bavimo se takođe i prodajom avio karata, rent a car uslugama, kongresnim turizmom... Cilj našeg rada i ono čemu težimo jeste da vama pružimo najbolju i najpovoljniju uslugu prevoza i smeštaja širom naše zemlje i sveta. Vaše zadovoljstvo uslugom koju vam pružamo i želja da ponovo budete naši putnici, naša su najbolja preporuka koja čini da se osećamo uspešnima u svom poslu. Veliki broj zadovoljnih putnika sa kojima smo do sad sarađivali tvrde sa smo veoma pouzdani, efikasni i da smo svojom profesionalnom uslugom opravdali njihovo poverenje. Vaše putovanje iz snova počinje sa nama Kuća dobrih putovanja - Dream Land. Licenca br OTP 13/2015. Dream Land je članica YUTA-e.
+				</div>
+			</div>
+			<div class="col-md-6">
+				<form onsubmit="return validacija()">
+					<div class="form-group">
+						<label for="email" style="color:white">Ime i prezime *</label>
+						<input class="form-control" id="ime" required>
+					</div>
+					<div class="form-group" style="color:white">
+						<label for="email">Email *</label>
+						<input class="form-control" id="email" required>
+					</div>
+					<div class="text" style="color:white">
+						<label for="text">Poruka</label>
+						<textarea rows="6" cols="76" id="textArea1" style="color:black" required></textarea>
+					</div>
+					<button type="submit" class="btn btn-default">Posalji</button>
+				</form>
+			</div>
+
+
+		</div>
+	</div>
+	<br>
+	<br>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<div id="map"></div>
+        		<script>
+
+          		function initMap(){
+
+          			var options ={
+        			zoom: 10,
+        			center:{lat:44.772927, lng:20.474986}
+        		
+        			}
+          		
+          			var map = new google.maps.Map(document.getElementById('map'),options);
+
+          			var marker = new google.maps.Marker({
+          				position:{lat:44.772927, lng:20.474986},
+          				map:map
+          			});
+          		
+
+          		}
+            	
+         	 </script>
+    		<script async defer
+    		 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCfY4NWn2VL-Sh1TeG1qRvv4R3DToLFb-A&callback=initMap">
+    		</script>
+		</div>
+	</div>
+</div>
+
+
+<br>
+	<footer footer-fixed-down>
+		<div class="container" >
+			<div class="row">
+				<div class="col-md-8" id="podaci">
+					<ul>
+						<li><span class="glyphicon glyphicon-pushpin" ></span> Jove Ilica 154</li>
+						<li><span class="glyphicon glyphicon-earphone"></span> 011/100 1000</li>
+						<li><span class="glyphicon glyphicon-phone"></span> 064/12 34 567</li>
+						<li><span class="glyphicon glyphicon-envelope"></span> agencija@agencija.rs</li>
+
+					</ul>
+				</div>
+
+
+				<div class="col-md-4" id="copy">
+					<p>Copyright &copy;   @anastojkovicc - ZAPRATI ME NA INSTA</p>
+				</div>
+			</div>
+
+
+		</div>
+	</footer>
+
+</body>
+</html>

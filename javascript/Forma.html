@@ -1,0 +1,133 @@
+<html>
+<head>
+	<title>Validacija forme</title>
+
+	<script>
+		function validacija() {
+
+			if (document.forms[0].ime.value=='') {
+				alert("Niste uneli Vase ime!");
+				document.forms[0].ime.focus();
+				return false
+			}
+			if (document.forms[0].prezime.value=='') {
+				alert("Niste uneli Vase prezime!");
+				document.forms[0].prezime.focus();
+				return false;
+			}
+			if (document.forms[0].mail.value=='') {
+				alert("Niste uneli e-mail adresu!");
+				document.forms[0].mail.focus();
+				return false;
+			}
+			if(document.forms[0].mail.value.indexOf('@') == -1)
+			{
+				alert("Niste uneli e-mail adresu u odgovarajucem formatu!");
+				document.forms[0].mail.focus();
+				return false;
+			}
+			
+			if (!proveriradio(document.forms[0].pol)) { 
+				alert('Niste selektovali pol');
+				return false;
+			}
+
+			return confirm("Ispravno ste uneli sve podatke, da li nastavljate sa registracijom?");
+		}
+		
+		function proveriradio(dugmici) 
+		{
+			for(var i = 0; i < dugmici.length; i++) {
+				if(dugmici[i].checked) return true;
+			}
+			return false;
+		}
+	</script>
+
+
+	<script>
+		var pomocna = false;
+
+		function proveri(polje) {
+			if (pomocna == false) {
+				for (i = 0; i < polje.length; i++) {
+					polje[i].checked = true;
+				}
+				pomocna = true;
+				return "Obrisi sve cekirane"; 
+			}
+			else {
+				for (i = 0; i < polje.length; i++) {
+					polje[i].checked = false; 
+				}
+				pomocna = false;
+				return "Oznaci sve"; 
+			}
+		}
+	</script>
+
+</head>
+<body>
+	<form onsubmit="return validacija()">
+		<p><b><font size=4>Ovo forma sluzi kao primer koriscenja JavaScript-a za validaciju</font></b></p>
+		<b>Izaberite pol:</b>
+		<input type="radio" name="pol" value="male"> Zenski
+		<input type="radio" name="pol" value="female"> Muski
+		<br>
+		<br>
+		<b>Unesite ime i prezime:</b>
+		<br>
+		<br>
+		<b>Ime</b> 
+		<input type="text" name="ime">
+		<br>
+		<b>Prezime</b> 
+		<input type="text" name="prezime">
+		<br>
+		<br>
+		<b>Selektujte kurseve koje pohadjate:</b>
+		<br>
+		<br>
+		Simulacija i simulacioni jezici
+		<input type="checkbox" name="predmet" value="" />
+		<br>
+		Internet tehnologije
+		<input type="checkbox" name="predmet" value="" />
+		<br>
+		Upravljanje rizikom u informacionim sistemima
+		<input type="checkbox" name="predmet" value="" />
+		<br>
+		Konkurentno programiranje
+		<input type="checkbox" name="predmet" value="" />
+		<br>
+		Elektronsko poslovanje
+		<input type="checkbox" name="predmet" value="" />
+		<br>
+		<br>
+		<input type="button" value="Oznaci sve" onClick="this.value=proveri(this.form.predmet)"> 
+		<br>
+		<br>
+		<b>Unesite e-mail adresu:</b>
+		<br>
+		<input type="text" name="mail" size="35">
+		<br>
+		<br>
+		<b>Sta ocekujete od kurseva?</b>
+		<br>
+		<textarea name="area" rows="10" cols="30">
+
+		</textarea>
+		<br>
+		<br>
+		<b>Upload slike:</b>
+		<br>
+		<INPUT type="file" name="file">
+		<br>
+		<br>
+		<INPUT type="submit" value="Registruj se" name="submit"> 
+		<INPUT type="reset" value="Obrisi podatke" namer="reset">
+
+	</form>
+	
+</body>
+</html>

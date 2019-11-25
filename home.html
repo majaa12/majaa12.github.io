@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+
+
+	<meta http-equiv="Content-Language" content="sr" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<!--   <link href="css/bootstrap.css" rel="stylesheet">   menja liniju ispod -->
+	
+	
+	<!--<link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">-->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/home.css">
+	
+	<!-- LINKOVANJE ZA SAT -->
+	<link rel="stylesheet" href="compiled/flipclock.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="compiled/flipclock.js"></script>	
+	<!-- LINKOVANJE ZA SAT -->
+
+
+
+	<!-- LINKOVANJE ZA Kalendar -->
+	<link rel="stylesheet" type="text/css" href="css/kalendar.css">
+	<script type="text/javascript" src="javascript/jquery-kalendar.js"></script>
+	<!-- LINKOVANJE ZA KALENDAR -->
+
+	<!--MOUSE OVER AND OUT-->
+	<script type="text/javascript" src="javascript/home.js"></script>
+	
+
+	<title>Travel Agency</title>
+	<link rel="shortcut icon" href="img/icon.png" />
+	
+</head>
+
+<body>
+
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toogle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				
+				<a class="navbar-brand" href="home.html">Travel Agency</a>
+			</div>
+			<div id="navbar" class="collapse navbar-collapse">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#"><span class="glyphicon glyphicon-home"> </span> Početna</a></li>
+					<li><a href="pages/onama.html">O nama</a></li>
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-plane" ></span> Putovanja <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="pages/evropa.html">Evropa</a></li>
+							<li><a href="pages/interkontinentalna.html">Interkontinentalna</a></li>
+						</ul>
+					</li>
+					<li><a href="pages/rezervacije.html"><span class="glyphicon glyphicon-book"></span> Rezervacije</a></li>
+					<li><a href="pages/galerija.html">Galerija</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+
+		<div class="jumbotron" id="jumbo">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<h1 class="home-jumbo">Putujte sa <span class="em-txt">stilom</span></h1>
+					</div>
+
+					
+				</div>
+
+				<div class="row">
+					<div class="col-md-6">
+
+						<div class="clock" style="margin:2em;"></div>
+
+						<script type="text/javascript">
+							var clock;
+
+							$(document).ready(function() {
+								clock = $('.clock').FlipClock({
+									clockFace: 'TwentyFourHourClock'
+								});
+							});
+						</script>
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+
+		<section id="middle">
+			<div class="container">
+				<div class="row">
+					<h1>  Atraktivne destinacije</h1>
+
+					<div class="col-md-3">
+						<div class="panel panel-default	" id="havanaPanel">
+							<div class="panel-heading">Havana</div>
+							
+							<div class="panel-body"><a href="pages/interkontinentalna.html"><img class="atraktivne-destinacije" src="img/havana.jpg" name="havana" onmouseover="overHavana()"; onmouseout="outHavana()" id="havana" alt="Havana"></a>
+							</div>
+						
+							<div class="panel-footer"> Mnogi smatraju da Kubu i Havanu treba obići pre nego što izgube svoju autentičnost. Ipak, na promene ne treba uvek gledati negativno, a ako želite da na momenat zaboravite savremeni moderan svet, posetite ovo ostrvo boja, čuvenog Če Gevare, Fidela Kastra i “oldtajmera” koji podsećaju na neko davno prošlo vreme.</div>
+						</div>
+
+
+						<div class="panel panel-default	">
+							<div class="panel-heading">Pariz</div>
+							<div class="panel-body"><a href="pages/evropa.html"><img class="atraktivne-destinacije" src="img/pariz1.jpg" name="pariz" onmouseover="overPariz()"; onmouseout="outPariz()" id="pariz" alt="Pariz"></a>
+							</div>
+							<div class="panel-footer">Proverite zašto ga baš zovu grad ljubavi. Grad koji krase niz jedinstvenih suprotnosti: široke avenije i bulevari oivičeni gospodskim osmanovskim građevinama i uske krivudave uličice Latinske četvrti ili Monmartra sa svojim vinogradom.</div>
+						</div>
+
+					</div>
+
+					<div class="col-md-3">
+						<div class="panel panel-default	">
+							<div class="panel-heading">Dubai</div>
+							<div class="panel-body"><a href="pages/interkontinentalna.html"><img class="atraktivne-destinacije" src="img/dubai2.jpg" name="dubai" onmouseover="overDubai()" onmouseout="outDubai()" id="dubai" alt="Dubai"></a>
+							</div>
+							<div class="panel-footer">Dubai je finansijki, kulturni i turistički centar države, a Abu Dabi je glavni grad. Grad obiluje kako ultra-modernim tako i hotelima svih vrsta i kategorija. Prepoznatljiv je po najvišoj zgradi na svetu (Burj Khalifa – 829m), poluostrvima u obliku palme, najmodernijim i najvećim tržnim centrima.</div>
+						</div>
+
+						<div class="panel panel-default	">
+							<div class="panel-heading">Amsterdam</div>
+							<div class="panel-body"><a href="pages/evropa.html"><img class="atraktivne-destinacije" src="img/amsterdam1.jpg" name="amsterdam" onmouseover="overAmsterdam()"; onmouseout="outAmsterdam()" id="amsterdam" alt="Amsterdam"></a>
+							</div>
+							<div class="panel-footer">Zemlja lala, klompi, sira, piva, vetrenjača, dijamanata, dvoraca, zemlja tolerancije i perfekcije... Ovo je najnaseljeniji deo starog kontinenta, ovo je deo Evrope koji se jednostavno mora videti i doživeti. Danas je najveći grad u državi i finansijski i kulturni centar.</div>
+						</div>
+
+
+
+					</div>
+					<div class="col-md-6" >
+
+						<div class="pomeraj"></div>
+						
+						<div id="calendar"></div>
+						</div>
+
+						<script>
+
+							var events = [{start: '2017-04-01', end: '2017-04-07', summary: "Example Event", mask: true}, {start: '2017-05-05', end: '2017-05-15', summary: "Example Event #3", mask: true}];
+
+							$('#calendar').calendar({'events': events});
+
+							var calendar1 = new Date();
+							calendar1.setMonth(calendar1.getMonth() - 1);
+
+							$('#calendar-1').calendar({color: 'orange', date: calendar1});
+
+							var calendar2 = new Date();
+							calendar2.setMonth(calendar2.getMonth() + 1);
+
+							$('#calendar-2').calendar({color: 'purple', date: calendar2, events: events});
+
+							var calendar3 = new Date();
+							calendar3.setMonth(calendar3.getMonth() + 2);
+
+							$('#calendar-3').calendar({color: 'yellow', date: calendar3});
+
+							var calendar4 = new Date();
+							calendar4.setMonth(calendar4.getMonth() + 3);
+
+							$('#calendar-4').calendar({color: 'blue', date: calendar4});
+
+							var calendar5 = new Date();
+							calendar5.setMonth(calendar5.getMonth() + 4);
+
+							$('#calendar-5').calendar({color: 'green', date: calendar5});
+
+							var calendar6 = new Date();
+							calendar6.setMonth(calendar6.getMonth() + 5);
+
+							$('#calendar-6').calendar({color: 'grey', date: calendar6});
+
+							var calendar7 = new Date();
+							calendar7.setMonth(calendar7.getMonth() + 5);
+
+							$('#calendar-7').calendar({color: 'pink', date: calendar7});
+
+
+						</script>
+
+					</div>
+
+
+					
+				</div>
+
+
+		</section>
+
+		
+
+	<br><br>
+	<footer footer-fixed-down>
+		<div class="container" >
+			<div class="row">
+				<div class="col-md-8" id="podaci">
+					<ul>
+						<li><span class="glyphicon glyphicon-pushpin" ></span> Jove Ilica 154</li>
+						<li><span class="glyphicon glyphicon-earphone"></span> 011/100 1000</li>
+						<li><span class="glyphicon glyphicon-phone"></span> 064/12 34 567</li>
+						<li><span class="glyphicon glyphicon-envelope"></span> agencija@agencija.rs</li>
+
+					</ul>
+				</div>
+
+
+				<div class="col-md-4" id="copy">
+					<p>Copyright &copy;  @anastojkovicc - ZAPRATI ME NA INSTA</p>
+				</div>
+			</div>
+
+
+		</div>
+	</footer>
+
+	<script type="text/javascript" src="javascript/javascript.js"></script>
+</body>
+
+</html>
